@@ -1,0 +1,100 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "uni-app"
+            }
+        },
+        {
+            "path": "pages/mustache/mustache",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/life-cycle/life-cycle",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true
+            }
+
+        }, {
+            "path": "pages/computed/computed",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/instruction/instruction/instruction",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/instruction/wrap-element/wrap-element",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/global/vue-prototype/vue-prototype",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/global/global-data/global-data",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }, {
+            "path": "pages/shop/shop",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/navigate/navigate",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/list/list",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/doraemon/doraemon",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
+}
