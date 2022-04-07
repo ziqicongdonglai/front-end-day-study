@@ -15,6 +15,7 @@
 <style lang="less">
 	@import url("@/common/index.less");
 	@import url("@/common/icon.css");
+	@import url("@/common/iconfont.css");
 	@import url("@/common/uni.css");
 	@import url("@/common/animate.css");
 </style>

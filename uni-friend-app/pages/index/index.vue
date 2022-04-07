@@ -35,6 +35,53 @@
 </template>
 
 <script>
+    // 模拟数据
+    const demo = [{
+            nickname: '紫气从东来',
+            avatarUrl: '/static/img/me.jpg',
+            publishTime: '2022-04-03 19:20:12',
+            isFollow: false,
+            title: '集腋成裘,聚沙成塔。',
+            thumbnail: '/static/img/banner7.jpg',
+            support: {
+                type: "",
+                supportCount: 10,
+                unSupportCount: 0
+            },
+            commentCount: 10,
+            shareCount: 12
+        },
+        {
+            nickname: '酱油',
+            avatarUrl: '/static/img/avatar7.jpg',
+            publishTime: '2022-04-03 20:20:12',
+            isFollow: true,
+            title: '从那走到台上，短短几步，五年，我走了整整五年。',
+            thumbnail: '',
+            support: {
+                type: "",
+                supportCount: 8,
+                unSupportCount: 2
+            },
+            commentCount: 10,
+            shareCount: 12
+        },
+        {
+            nickname: 'wota',
+            avatarUrl: '/static/img/avatar8.jpg',
+            publishTime: '2022-04-03 21:20:12',
+            isFollow: false,
+            title: 'good good study，day day up',
+            thumbnail: '/static/img/banner9.jpg',
+            support: {
+                type: "support",
+                supportCount: 33,
+                unSupportCount: 7
+            },
+            commentCount: 10,
+            shareCount: 12
+        }
+    ]
     import commonListItem from '@/components/common/common-list-item.vue';
     import loadmore from '@/components/common/loadmore.vue';
     export default {
@@ -77,6 +124,12 @@
             })
             this.getData();
         },
+        // 点击导航栏搜索框
+        onNavigationBarSearchInputClicked() {
+            uni.navigateTo({
+                url: '../search/search'
+            })
+        },
         methods: {
             // 获取数据
             getData() {
@@ -87,52 +140,7 @@
                     let obj = {
                         // 1.上拉加载更多 2.加载中 3.没有更多了
                         loadmore: '上拉加载更多',
-                        list: [{
-                                nickname: '紫气从东来',
-                                avatarUrl: '/static/img/me.jpg',
-                                publishTime: '2022-04-03 19:20:12',
-                                isFollow: false,
-                                title: '集腋成裘,聚沙成塔。',
-                                thumbnail: '/static/img/banner7.jpg',
-                                support: {
-                                    type: "",
-                                    supportCount: 10,
-                                    unSupportCount: 0
-                                },
-                                commentCount: 10,
-                                shareCount: 12
-                            },
-                            {
-                                nickname: '酱油',
-                                avatarUrl: '/static/img/avatar7.jpg',
-                                publishTime: '2022-04-03 20:20:12',
-                                isFollow: true,
-                                title: '从那走到台上，短短几步，五年，我走了整整五年。',
-                                thumbnail: '',
-                                support: {
-                                    type: "",
-                                    supportCount: 8,
-                                    unSupportCount: 2
-                                },
-                                commentCount: 10,
-                                shareCount: 12
-                            },
-                            {
-                                nickname: 'wota',
-                                avatarUrl: '/static/img/avatar8.jpg',
-                                publishTime: '2022-04-03 21:20:12',
-                                isFollow: false,
-                                title: 'good good study，day day up',
-                                thumbnail: '/static/img/banner9.jpg',
-                                support: {
-                                    type: "support",
-                                    supportCount: 33,
-                                    unSupportCount: 7
-                                },
-                                commentCount: 10,
-                                shareCount: 12
-                            }
-                        ]
+                        list: demo
                     }
                     arr.push(obj);
                 }

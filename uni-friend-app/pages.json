@@ -1,91 +1,116 @@
 {
-	"pages": [{
-			"path": "pages/index/index",
-			"style": {
-				"enablePullDownRefresh": true,
-				"app-plus": {
-					"titleNView": {
-						"searchInput": {
-							"align": "center",
-							"backgroundColor": "#F5F4F2",
-							"borderRadius": "4px",
-							"placeholder": "搜索",
-							"placeholderColor": "#6F6C67"
-						},
-						"buttons": [{
-							"color": "#FFFFFF",
-							"colorPressed": "#EF2626",
-							"float": "right",
-							"fontSize": "20px",
-							"fontSrc": "/static/font/iconfont.ttf",
-							"text": "\ue668"
-						}]
-					}
-				}
-			}
-		},
-		{
-			"path": "pages/dynamic/dynamic",
-			"style": {
-				"navigationBarTitleText": "动态"
-			}
-		},
-		{
-			"path": "pages/msg/msg",
-			"style": {
-				"navigationBarTitleText": "消息"
-			}
-		},
-		{
-			"path": "pages/my/my",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "我的应用",
-		"navigationBarBackgroundColor": "#EF4444",
-		"backgroundColor": "#F8F8F8",
-		"pageOrientation": "portrait", //横屏配置，全局屏幕旋转设置(仅 APP/微信/QQ小程序)，支持 auto / portrait / landscape
-		"rpxCalcMaxDeviceWidth": 960,
-		"rpxCalcBaseDeviceWidth": 375,
-		"rpxCalcIncludeWidth": 750
-	},
-	"tabBar": {
-		"color": "#333333",
-		"borderStyle": "black",
-		"selectedColor": "#EF4444",
-		"backgroundColor": "#FFFFFF",
-		"height": "50px",
-		"fontSize": "14px",
-		"iconWidth": "20px",
-		"spacing": "3px",
-		"list": [{
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "static/tabbar/index.png",
-				"selectedIconPath": "static/tabbar/index-active.png"
-			},
-			{
-				"pagePath": "pages/dynamic/dynamic",
-				"text": "动态",
-				"iconPath": "static/tabbar/dynamic.png",
-				"selectedIconPath": "static/tabbar/dynamic-active.png"
-			},
-			{
-				"pagePath": "pages/msg/msg",
-				"text": "消息",
-				"iconPath": "static/tabbar/msg.png",
-				"selectedIconPath": "static/tabbar/msg-active.png"
-			},
-			{
-				"pagePath": "pages/my/my",
-				"text": "我的",
-				"iconPath": "static/tabbar/my.png",
-				"selectedIconPath": "static/tabbar/my-active.png"
-			}
-		]
-	}
+    "pages": [{
+            "path": "pages/index/index",
+            "style": {
+                "enablePullDownRefresh": true,
+                "app-plus": {
+                    "titleNView": {
+                        "searchInput": {
+                            "align": "center",
+                            "backgroundColor": "#F5F4F2",
+                            "borderRadius": "4px",
+                            "placeholder": "搜索",
+                            "disabled": true,
+                            "placeholderColor": "#6F6C67"
+                        },
+                        "buttons": [{
+                            "color": "#FFFFFF",
+                            "colorPressed": "#EF2626",
+                            "float": "right",
+                            "fontSize": "20px",
+                            "fontSrc": "/static/font/iconfont.ttf",
+                            "text": "\ue668"
+                        }]
+                    }
+                }
+            }
+        },
+        {
+            "path": "pages/dynamic/dynamic",
+            "style": {
+                "navigationBarTitleText": "动态"
+            }
+        },
+        {
+            "path": "pages/msg/msg",
+            "style": {
+                "navigationBarTitleText": "消息"
+            }
+        },
+        {
+            "path": "pages/my/my",
+            "style": {
+                "navigationBarTitleText": "我的"
+            }
+        }, {
+            "path": "pages/search/search",
+            "style": {
+                "enablePullDownRefresh": false,
+                "app-plus": {
+                    "titleNView": {
+                        "searchInput": {
+                            "align": "center",
+                            "backgroundColor": "#F5F4F2",
+                            "borderRadius": "4px",
+                            "placeholder": "搜索帖子",
+                            "placeholderColor": "#6F6C67"
+                        },
+                        "buttons": [{
+                            "color": "#FFFFFF",
+                            "colorPressed": "#EF2626",
+                            "float": "right",
+                            "fontSize": "14px",
+                            "text": "搜索"
+                        }]
+                    }
+                }
+            }
+
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "我的应用",
+        "navigationBarBackgroundColor": "#EF4444",
+        "backgroundColor": "#F8F8F8",
+        "pageOrientation": "portrait", //横屏配置，全局屏幕旋转设置(仅 APP/微信/QQ小程序)，支持 auto / portrait / landscape
+        "rpxCalcMaxDeviceWidth": 960,
+        "rpxCalcBaseDeviceWidth": 375,
+        "rpxCalcIncludeWidth": 750
+    },
+    "tabBar": {
+        "color": "#333333",
+        "borderStyle": "black",
+        "selectedColor": "#EF4444",
+        "backgroundColor": "#FFFFFF",
+        "height": "50px",
+        "fontSize": "14px",
+        "iconWidth": "20px",
+        "spacing": "3px",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "static/tabbar/index.png",
+                "selectedIconPath": "static/tabbar/index-active.png"
+            },
+            {
+                "pagePath": "pages/dynamic/dynamic",
+                "text": "动态",
+                "iconPath": "static/tabbar/dynamic.png",
+                "selectedIconPath": "static/tabbar/dynamic-active.png"
+            },
+            {
+                "pagePath": "pages/msg/msg",
+                "text": "消息",
+                "iconPath": "static/tabbar/msg.png",
+                "selectedIconPath": "static/tabbar/msg-active.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "static/tabbar/my.png",
+                "selectedIconPath": "static/tabbar/my-active.png"
+            }
+        ]
+    }
 }

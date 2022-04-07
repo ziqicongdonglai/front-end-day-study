@@ -1,2 +1,4 @@
 .hbuilderx
 unpackage/
+**/unpackage/**
+.DS_Store
