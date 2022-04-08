@@ -130,6 +130,12 @@
                 url: '../search/search'
             })
         },
+        // 顶部发帖按钮
+        onNavigationBarButtonTap(e) {
+            uni.navigateTo({
+                url: '../write/write'
+            })
+        },
         methods: {
             // 获取数据
             getData() {

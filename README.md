@@ -106,3 +106,7 @@ day4项目为文档的练习
 - 首页滚动tab导航联动
 - 上拉加载组件 loadmore.vue
 - 全局无数据组件 nothing.vue
+
+## Day07——搜索页面
+
+## Day08—发表页

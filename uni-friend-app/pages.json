@@ -67,6 +67,14 @@
             }
 
         }
+        ,{
+            "path" : "pages/write/write",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom"
+            }
+            
+        }
     ],
     "globalStyle": {
         "navigationBarTextStyle": "white",
