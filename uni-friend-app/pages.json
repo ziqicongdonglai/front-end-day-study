@@ -28,8 +28,27 @@
         {
             "path": "pages/dynamic/dynamic",
             "style": {
-                "navigationBarTitleText": "动态"
+                "navigationBarTitleText": "动态",
+                "app-plus": {
+                    "titleNView": false
+                }
             }
+        },
+        {
+            "path": "pages/topic-detail/topic-detail",
+            "style": {
+                "navigationBarTitleText": "话题详情",
+                "app-plus": {
+                    "scrollIndicator":"none", // 隐藏滚动条
+                    "titleNView": {
+                        "type":"transparent", // 渐变
+                        "buttons": [{
+                            "type":"menu"
+                        }]
+                    }
+                }
+            }
+
         },
         {
             "path": "pages/msg/msg",
@@ -66,14 +85,12 @@
                 }
             }
 
-        }
-        ,{
-            "path" : "pages/write/write",
-            "style" :                                                                                    
-            {
-                "navigationStyle":"custom"
+        }, {
+            "path": "pages/write/write",
+            "style": {
+                "navigationStyle": "custom"
             }
-            
+
         }
     ],
     "globalStyle": {
