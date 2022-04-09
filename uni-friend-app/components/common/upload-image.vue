@@ -1,6 +1,6 @@
 <template>
     <view class="px-2">
-        <view class="uni-uploader">
+        <view class="uni-uploader" v-if="show">
             <view class="uni-uploader-head">
                 <view class="uni-uploader-title">点击可预览图片</view>
                 <view class="uni-uploader-info">{{imageList.length}}/9</view>
@@ -39,6 +39,15 @@
         ['compressed', 'original']
     ]
     export default {
+        props: {
+            list: {
+                type: Array
+            },
+            show: {
+                type: Boolean,
+                default: true
+            }
+        },
         data() {
             return {
                 title: 'choose/previewImage',
@@ -51,6 +60,11 @@
                 count: [1, 2, 3, 4, 5, 6, 7, 8, 9]
             }
         },
+        created() {
+            console.log('进入组件');
+            this.imageList = this.list;
+            console.log(this.list);
+        },
         onUnload() {
             this.imageList = [],
                 this.sourceTypeIndex = 2,
@@ -60,6 +74,7 @@
                 this.countIndex = 8;
         },
         methods: {
+            // 删除图片
             deleteImage(index) {
                 uni.showModal({
                     title: '提示',
@@ -75,6 +90,7 @@
                     }
                 })
             },
+            // 选择图片
             chooseImage: async function() {
                 // #ifdef APP-PLUS
                 // TODO 选择相机或相册时 需要弹出actionsheet，目前无法获得是相机还是相册，在失败回调中处理

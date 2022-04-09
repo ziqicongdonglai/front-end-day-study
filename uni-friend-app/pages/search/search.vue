@@ -187,7 +187,6 @@
                     confirmText: '确定',
                     confirmColor: '#ef4444',
                     cancelText: '取消',
-                    cancelColor: '#ef4444',
                     success: (res) => {
                         if (res.confirm) {
                             // console.log('用户点击确定');
