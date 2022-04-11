@@ -39,11 +39,11 @@
             "style": {
                 "navigationBarTitleText": "话题详情",
                 "app-plus": {
-                    "scrollIndicator":"none", // 隐藏滚动条
+                    "scrollIndicator": "none", // 隐藏滚动条
                     "titleNView": {
-                        "type":"transparent", // 渐变
+                        "type": "transparent", // 渐变
                         "buttons": [{
-                            "type":"menu"
+                            "type": "menu"
                         }]
                     }
                 }
@@ -53,7 +53,33 @@
         {
             "path": "pages/msg/msg",
             "style": {
-                "navigationBarTitleText": "消息"
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "消息",
+                "app-plus": {
+                    "scrollIndicator": "none", // 隐藏滚动条
+                    "titleNView": {
+                        "buttons": [
+                            // 左边
+                            {
+                                "color": "#FFFFFF",
+                                "colorPressed": "#CCCCCC",
+                                "float": "left",
+                                "fontSize": "22px",
+                                "fontSrc": "/static/font/iconfont.ttf",
+                                "text": "\ue611"
+                            },
+                            // 右边
+                            {
+                                "color": "#FFFFFF",
+                                "colorPressed": "#CCCCCC",
+                                "float": "right",
+                                "fontSize": "22px",
+                                "fontSrc": "/static/font/iconfont.ttf",
+                                "text": "\ue649"
+                            }
+                        ]
+                    }
+                }
             }
         },
         {
@@ -89,6 +115,62 @@
             "path": "pages/write/write",
             "style": {
                 "navigationStyle": "custom"
+            }
+
+        }, {
+            "path": "pages/friend-list/friend-list",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus": {
+                    "animationType": "slide-in-left", // 进场动画
+                    "scrollIndicator": "none", // 隐藏滚动条
+                    "bounce": "none", // 关闭反弹效果
+                    "titleNView": {
+                        "autoBackButton": false,
+                        // 搜索框配置
+                        "searchInput": {
+                            "align": "left",
+                            "backgroundColor": "#F7F7F7",
+                            "borderRadius": "4px",
+                            "placeholder": "搜索好友",
+                            "placeholderColor": "#CCCCCC",
+                            "disabled": false
+                        },
+                        // 配置按钮
+                        "buttons": [
+                            // 右边
+                            {
+                                "color": "#FFFFFF",
+                                "colorPressed": "#BBBBBB",
+                                "float": "right",
+                                "fontSize": "16px",
+                                "text": "取消"
+                            }
+                        ]
+                    }
+                }
+            }
+
+        }, {
+            "path": "pages/friend-chat/friend-chat",
+            "style": {
+                "navigationBarTitleText": "聊天页",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [
+                            // 右边
+                            {
+                                "color": "#FFFFFF",
+                                "colorPressed": "#BBBBBB",
+                                "float": "right",
+                                "fontSize": "22px",
+                                "fontSrc": "/static/font/iconfont.ttf",
+                                "text": "\ue628"
+                            }
+                        ]
+                    }
+                }
             }
 
         }
