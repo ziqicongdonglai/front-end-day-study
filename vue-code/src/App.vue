@@ -2,6 +2,9 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
+    <router-link to="/mapSet">MapSet</router-link> |
+    <router-link to="/markRaw">MarkRaw</router-link> |
+    <router-link to="/readOnly">ReadOnly</router-link> |
     <router-link to="/todoList">todoList</router-link>
   </nav>
   <router-view/>

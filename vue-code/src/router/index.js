@@ -19,6 +19,19 @@ const routes = [
     path: "/todoList",
     name: "todoList",
     component: () => import("../views/TodoList.vue")
+  },
+  {
+    path: "/mapSet",
+    name: "mapSet",
+    component: () => import("../views/MapSet.vue")
+  },{
+    path: "/markRaw",
+    name: "markRaw",
+    component: () => import("../views/MarkRaw.vue")
+  },{
+    path: "/readOnly",
+    name: "readOnly",
+    component: () => import("../views/ReadOnly.vue")
   }
 ]
 
