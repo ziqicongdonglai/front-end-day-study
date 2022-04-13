@@ -12,7 +12,7 @@
             <view v-else class="unfollow-btn animated fast" hover-class="fadeIn" @tap="follow('n')">已关注</view>
         </view>
 
-        <view class="text-lg my-1 py-1" @tap="openDetail">
+        <view class="text-lg my-1 py-1" @tap="openDetail(item)">
             {{item.title}}
         </view>
 
@@ -69,8 +69,10 @@
                 }
             },
             // 打开详情页
-            openDetail() {
-                console.log('打开详情页');
+            openDetail(item) {
+                uni.navigateTo({
+                    url: `../article-detail/article-detail?detailData=${JSON.stringify(item)}`
+                });
             },
             // 顶踩操作
             doSupport(type) {

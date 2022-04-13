@@ -42,12 +42,22 @@
             publishTime: '2022-04-03 19:20:12',
             isFollow: false,
             title: '集腋成裘,聚沙成塔。',
+            content: `<h3 class="text-error font-weight-bold text-xl">集腋成裘,聚沙成塔。</h3>
+                      <p class="text-lg" style="text-indent: 2em;">聚沙成塔，集腋成裘，汉语谚语。比喻积少成多。</p>
+                      <h4>释义</h4>
+                      <p class="text-lg" style="text-indent: 2em;">聚沙成塔：佛家语。聚沙，佛家称儿童时代为聚沙之年，儿童聚沙游戏，集聚沙子可堆成宝塔，比喻积少成多。</p>
+                      <p class="text-lg" style="text-indent: 2em;">集腋成裘：腋，腋下，指狐狸腋下的毛皮； 裘，皮袄。 狐狸腋下的毛皮虽小，但聚集起来可制成皮袄。比喻积少成多。</p>
+                      <h4>出处</h4>
+                      <p class="text-lg" style="text-indent: 2em;">《法华经·方便品》：“乃至童子戏，聚沙为佛塔，如是诸人等，皆已成佛道。”清·李宝嘉《官场现形记》第十一回：“他这会就去同人家商量，想趁此机会，捐个知县班，果然一齐应允，也有二百的，也有一百的，也有五十的，居然集腋成裘，立刻到捐局里，填了都照出来。”</p>
+                      `,
             thumbnail: '/static/img/banner7.jpg',
+            morePics: ['/static/img/banner1.jpg', '/static/img/banner3.jpg', '/static/img/banner5.jpg'],
             support: {
                 type: "",
                 supportCount: 10,
                 unSupportCount: 0
             },
+            address: "江苏·扬州",
             commentCount: 10,
             shareCount: 12
         },
@@ -57,12 +67,19 @@
             publishTime: '2022-04-03 20:20:12',
             isFollow: true,
             title: '从那走到台上，短短几步，五年，我走了整整五年。',
+            content: `<h3 class="text-error font-weight-bold text-xl">从那走到台上，短短几步，五年，我走了整整五年。</h3>
+                    <p class="text-lg" style="text-indent: 2em;">五年了，从那走到台上，我走了整整五年。</p>
+                    <p class="text-lg" style="text-indent: 2em;">谢谢我的粉丝，给了我这个名次，让我站在这里。</p>
+                    <p class="text-lg" style="text-indent: 2em;">这一刻是令人感动的一刻，终将被时间凝成琥珀，永远被我们珍藏！</p>
+                    `,
             thumbnail: '',
+            morePics: [],
             support: {
                 type: "",
                 supportCount: 8,
                 unSupportCount: 2
             },
+            address: "江苏·南京",
             commentCount: 10,
             shareCount: 12
         },
@@ -71,13 +88,18 @@
             avatarUrl: '/static/img/avatar8.jpg',
             publishTime: '2022-04-03 21:20:12',
             isFollow: false,
-            title: 'good good study，day day up',
+            title: 'Wota艺提升诀窍',
+            content: `<h3 class="text-error font-weight-bold text-xl">Wota艺提升诀窍</h3>
+                    <p class="text-lg" style="text-indent: 2em;">没有诀窍，问就是多练！多练！多练！重要的事情说三遍！</p>
+                    `,
             thumbnail: '/static/img/banner9.jpg',
+            morePics: ['/static/img/banner5.jpg', '/static/img/banner7.jpg', '/static/img/banner9.jpg'],
             support: {
                 type: "support",
                 supportCount: 33,
                 unSupportCount: 7
             },
+            address: "江苏·徐州",
             commentCount: 10,
             shareCount: 12
         }
