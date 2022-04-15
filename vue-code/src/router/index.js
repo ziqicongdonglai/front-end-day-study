@@ -32,6 +32,11 @@ const routes = [
     path: "/readOnly",
     name: "readOnly",
     component: () => import("../views/ReadOnly.vue")
+  },
+  {
+    path: "/counter",
+    name: "Counter",
+    component: () => import("../views/TestCounter.vue")
   }
 ]
 

@@ -5,7 +5,8 @@
     <router-link to="/mapSet">MapSet</router-link> |
     <router-link to="/markRaw">MarkRaw</router-link> |
     <router-link to="/readOnly">ReadOnly</router-link> |
-    <router-link to="/todoList">todoList</router-link>
+    <router-link to="/todoList">todoList</router-link> |
+    <router-link to="/counter">Counter</router-link>
   </nav>
   <router-view/>
 </template>
