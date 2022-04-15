@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom-text-selection</title>
+    <style>
+        ::selection {
+            background: #72C9AC;
+            color: black;
+        }
+
+        .custom-text-selection::selection {
+            background: #F0208F;
+            color: white;
+        }
+
+        .unselectable {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <p>default selection default selection default selection</p>
+    <p class="custom-text-selection">
+        custom text selection custom text selection 
+    </p>
+    <p class="unselectable">You can't select me!</p>
+</body>
+</html>
