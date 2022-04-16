@@ -6,7 +6,10 @@
     <router-link to="/markRaw">MarkRaw</router-link> |
     <router-link to="/readOnly">ReadOnly</router-link> |
     <router-link to="/todoList">todoList</router-link> |
-    <router-link to="/counter">Counter</router-link>
+    <router-link to="/counter">Counter</router-link> |
+    <router-link to="/parent">slots</router-link> |
+    <router-link to="/slotName">具名插槽</router-link> |
+    <router-link to="/slotScopes">插槽作用域</router-link> |
   </nav>
   <router-view/>
 </template>
