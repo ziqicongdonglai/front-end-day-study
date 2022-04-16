@@ -50,6 +50,10 @@ const routes = [
     path: '/slotScopes',
     name: 'slotScopes',
     component: () => import('../views/SlotScopes.vue')
+  },{
+    path: '/dynamicArguments',
+    name: 'DynamicArguments',
+    component: () => import('../views/DynamicArguments.vue')
   }
 ]
 
