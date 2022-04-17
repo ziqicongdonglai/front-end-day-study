@@ -66,6 +66,8 @@
             <br>
             <!-- <a v-bind:[key1 + key2]="a">aaa.com</a> -->
         </h2>
+
+        <hello-world msg="Vue3新特性"></hello-world>
     </div>
 </template>
 <script>

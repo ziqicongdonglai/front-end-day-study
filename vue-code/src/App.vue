@@ -11,6 +11,9 @@
     <router-link to="/slotName">具名插槽</router-link> |
     <router-link to="/slotScopes">插槽作用域</router-link> |
     <router-link to="/dynamicArguments">DynamicArguments</router-link> |
+    <router-link to="/globalApi">globalApi</router-link> |
+    <router-link to="/filters">filters</router-link> |
+    <router-link to="/transition">transition</router-link>
   </nav>
   <router-view/>
 </template>
