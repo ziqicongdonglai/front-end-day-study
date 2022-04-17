@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>popout-menu</title>
+        <style>
+            body {
+                background-color: #333;
+                color: #f6f6f6;
+                background-image: url('./images/timgWWOYDZQ2.jpg');
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .flex-1 {
+                flex: 1;
+            }
+
+            .reference {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .avatar {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 100%;
+                margin-right: 1rem;
+            }
+
+            .info-wrapper {
+                position: absolute;
+                top: -1rem;
+                left: 4rem;
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+
+            .info-wrapper>.title {
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .reference:hover>.popout-menu {
+                visibility: visible;
+            }
+
+            .popout-menu {
+                position: absolute;
+                visibility: hidden;
+                left: 1rem;
+                top: 5rem;
+                width: 400px;
+                height: 300px;
+                background: #fff;
+                color: #333;
+                border-radius: 4px;
+                box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.5);
+            }
+
+            .popout-menu>img {
+                position: absolute;
+                top: -1.2rem;
+                left: 1rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 4px;
+            }
+
+            .counter-wrapper {
+                position: absolute;
+                top: 3rem;
+                left: 2.5rem;
+                width: 80%;
+                margin: 2.5rem auto;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .btn-wrapper {
+                position: absolute;
+                top: 12rem;
+                left: 6rem;
+                margin-top: 2rem;
+            }
+
+            .btn-wrapper>button {
+                padding: 0.5rem 2rem;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .follow-btn {
+                background-color: #2366f1;
+                color: #fff;
+                margin-right: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reference">
+            <img src="https://picsum.photos/id/1011/384/256" class="avatar" />
+            <div class="info-wrapper">
+                <p class="title">梦工厂</p>
+                <p>程序员的梦工厂</p>
+            </div>
+
+            <div class="popout-menu">
+                <img
+                    src="https://picsum.photos/id/1011/384/256"
+                    class="avatar"
+                />
+                <div class="info-wrapper" style="left: 6rem; top: 0">
+                    <p class="title">梦工厂</p>
+                    <p>程序员的梦工厂</p>
+                </div>
+
+                <div class="counter-wrapper flex">
+                    <div class="flex-1">
+                        <h4>回答</h4>
+                        <h4>487</h4>
+                    </div>
+                    <div class="flex-1">
+                        <h4>文章</h4>
+                        <h4>1,987</h4>
+                    </div>
+                    <div class="flex-1">
+                        <h4>关注</h4>
+                        <h4>135,198</h4>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="follow-btn">关注</button>
+                    <button>发私信</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
