@@ -13,7 +13,8 @@
     <router-link to="/dynamicArguments">DynamicArguments</router-link> |
     <router-link to="/globalApi">globalApi</router-link> |
     <router-link to="/filters">filters</router-link> |
-    <router-link to="/transition">transition</router-link>
+    <router-link to="/transition">transition</router-link> |
+    <router-link to="/tele">tele</router-link> |
   </nav>
   <router-view/>
 </template>

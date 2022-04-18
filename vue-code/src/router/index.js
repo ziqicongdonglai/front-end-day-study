@@ -66,7 +66,12 @@ const routes = [
     path: '/transition',
     name: 'transition',
     component: () => import('../views/Transition.vue')
-  }
+  },
+  {
+    path: '/tele',
+    name: 'tele',
+    component: () => import('../views/tele.vue'),
+  },
 ]
 
 const router = createRouter({
