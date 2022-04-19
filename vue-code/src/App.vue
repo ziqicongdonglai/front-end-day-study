@@ -15,6 +15,8 @@
     <router-link to="/filters">filters</router-link> |
     <router-link to="/transition">transition</router-link> |
     <router-link to="/tele">tele</router-link> |
+    <router-link to="/testAsync">async</router-link> |
+    <router-link to="/testAsync1">async1</router-link> |
   </nav>
   <router-view/>
 </template>
