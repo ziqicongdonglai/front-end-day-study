@@ -2,6 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
+    <router-link to="/route">route</router-link> |
     <router-link to="/mapSet">MapSet</router-link> |
     <router-link to="/markRaw">MarkRaw</router-link> |
     <router-link to="/readOnly">ReadOnly</router-link> |
@@ -16,7 +17,7 @@
     <router-link to="/transition">transition</router-link> |
     <router-link to="/tele">tele</router-link> |
     <router-link to="/testAsync">async</router-link> |
-    <router-link to="/testAsync1">async1</router-link> |
+    <router-link to="/testAsync1">async1</router-link>
   </nav>
   <router-view/>
 </template>
